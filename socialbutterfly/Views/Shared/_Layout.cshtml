@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Groomate</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/Site.css")
+    @Styles.Render("~/Content/bootstrap.css")
+    <!-- Bootstrap CSS -->
+    <!-- font-awesome css -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+   
+    <!-- customized css -->
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <!--favicon-->
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <style>
+                a {
+                    color: black;
+                }
+
+                    a:hover {
+                        color: white;
+                    }
+
+                /**
+        ###########################################
+        **/
+                #about h2, #service h2 {
+                    font-family: 'Permanent Marker', cursive;
+                }
+
+                #about {
+                    background-image: url('~/Content/Images/dp9.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .carousel-inner {
+                    width: 100%;
+                   height:800px;
+                }
+
+                .carousel-content, .carousel-content2 {
+                    position: absolute;
+                    top: 10%;
+                    right: 6%;
+                    z-index: 20;
+                    color: white;
+                    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+                }
+
+                .carousel-content2 {
+                    left: 6%;
+                }
+
+                #request {
+                    background: linear-gradient(to right, #f4f0e8, #dbb472);
+                }
+    </style>
+    <title>Grommates</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- font-awesome css -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- customized css -->
+    <link rel="stylesheet" href="custom.css">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <!--favicon-->
+    <link rel="shortcut icon" href="./img/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="0" id="home">
+    <div class="bg-warning">
+        <div class="container">
+            <nav class="nav nav-justified navbar-light">
+                <a class="nav-item nav-link text-left col-sm-12" href="#"><i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp;(+04)743323424</a>
+                <a class="nav-item nav-link col-sm-12" href="#"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;info@grommats.com</a>
+                <a class="nav-item nav-link text-right col-sm-12" href="#">
+                    <i class="fab fa-twitter-square"></i>&nbsp;&nbsp;&nbsp;
+                    <i class="fab fa-pinterest-square"></i>&nbsp;&nbsp;&nbsp;
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pt-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">Grommates</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#request">Request</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Service2
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cards</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </nav>
+   
+    
+    
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.ActionLink("Groomate", "Index", "Home", null, new { @class = "navbar-brand" })
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Dashboard", "About", "Home")</li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+
+                                    <li>@Html.ActionLink("Grooming", "", "", null, new { title = "Our grooming services and packages" })</li>
+                                    <li>@Html.ActionLink("Kennel", "", "", null, new { title = "Our Kennel rates" })</li>
+                                    <li>@Html.ActionLink("Contact Us", "", "", null, new { title = "Contact us anytime!" })</li>
+
+
+                                </ul>
+                            </li>
+                            @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                        <li>@Html.ActionLink("Today's Appointments", "", "")</li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Roles", "Index", "RolesAdmin", null, new { title = "Create new roles for application users" })</li>
+                                <li>@Html.ActionLink("Customer Information", "Index", "UsersAdmin", null, new { title = "Customer records" })</li>
+                                <li>@Html.ActionLink("All Appointments", "", "", null, new { title = "Keep track of all of your upcoming appoinments" })</li>
+                                <li>@Html.ActionLink("Pet Information", "", "", null, new { title = "Pet information" })</li>
+                                <li>@Html.ActionLink("", "", "", null, new { title = "" })</li>
+
+                            </ul>
+                        </li>
+
+        }
+                        </ul>
+                        @Html.Partial("_LoginPartial")
+                    </div>
+                </div>
+            </div>*@
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Groomate</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
